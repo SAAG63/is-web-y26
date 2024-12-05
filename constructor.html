@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Конструктор таблиц">
+    <meta name="keywords" content="ресторан, кафе, контакты, кус-кус, восточная кухня">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Контакты - Ресторан Кус-Кус</title>
+    <script src="scripts/constructor.js" defer></script>
+</head>
+
+<body>
+<div class="container">
+    <header class="header">
+        <h1 class="header__title">Ресторан Кус-Кус</h1>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="menu.html" class="nav__link">Меню</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="constructor.html" class="nav__link">Конструктор</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <section class="section section--booking">
+            <h2 class="section__title">Бронирование столика</h2>
+            <form id="bookingForm" class="booking__form">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+7 777 777 7777">
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Дата бронирования:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Время бронирования:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="people">Количество человек:</label>
+                    <input type="number" id="people" name="people" min="1" max="10" required>
+                </div>
+
+                <button type="submit" class="btn">Забронировать</button>
+            </form>
+
+            <div id="bookingContainer" class="booking__output">
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+
+</html>
